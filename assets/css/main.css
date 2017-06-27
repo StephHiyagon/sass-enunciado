@@ -27,8 +27,12 @@ div.contenedor {
   top: -50px; }
   @media (max-width: 480px) {
     .contenedor1 {
-      position: static;
+      top: 0;
       width: 100%; } }
+  @media (max-width: 768px) {
+    .contenedor1 {
+      position: relative;
+      top: 0; } }
 
 /*Grilla, no la use, utilice mi propia relaci├│n*/
 .col-1 {
@@ -84,7 +88,6 @@ h1 {
 
 ul li {
   background-color: #3e3f40;
-  width: 100%;
   color: white;
   margin: 5px;
   padding: 10px; }
@@ -99,7 +102,6 @@ ol li {
 
 div.blue, div.blue2 p {
   background-color: #3e3f40;
-  width: 100%;
   color: white;
   margin: 5px;
   padding: 10px;

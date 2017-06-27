@@ -11,7 +11,6 @@ $letter-color:rgb(255, 255, 255);
 
 @mixin divBlue {
   background-color: $sec-color;
-  width:100%;
   color:$letter-color;
   margin:$medida/2;
   padding: $medida;
