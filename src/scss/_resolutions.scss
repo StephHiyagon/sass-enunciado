@@ -1,0 +1,56 @@
+$inline:inline-block;
+$medida:10px;
+$centrado:center;
+$automatico:auto;
+$percentage80:80%;
+
+.inline{
+  display:$inline;
+  margin-right:$medida;
+}
+
+div.inline{
+  h1,p,h4,ol{
+    margin:$medida;
+  }
+}
+
+div.contenedor{
+  width:80%;
+  margin:$automatico;
+  @media (max-width: 480px){
+    width:100%;
+    font-size: $medida;
+    h1{
+      font-size:$medida*1.8;
+    }
+  }
+
+}
+
+@for $i from 1 through 2{
+  .contenedor#{$i}{
+    width:30%*$i;
+  }
+}
+
+.contenedor1{
+  position: relative;
+  top: -5*$medida;
+  @media (max-width: 480px){
+    position:static;
+    width:100%;
+  }
+  // @media (max-width: 768px){
+  //   position: relative;
+  //   top: -5*$medida;
+  // }
+}
+
+/*Grilla, no la use, utilice mi propia relación*/
+$end:12;
+@for $i from 1 through $end{
+  .col-#{$i}{
+    width:100%/$end*$i;
+  }
+}

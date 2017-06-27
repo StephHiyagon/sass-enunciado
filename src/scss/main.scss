@@ -1,0 +1,48 @@
+@import "resolutions";
+@import "fonts";
+@import "colors";
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.head{
+  @include divYellow(70px);
+}
+
+ul {
+  li {
+    @include divBlue;
+  }
+  li:nth-child(4){
+    @include divYellow($automatico);
+  }
+}
+
+ol{
+  li{
+    margin-left: $medida*2;
+  }
+}
+
+div.blue{
+  @include divBlue;
+  margin:$automatico;
+  text-align: $centrado;
+  div.aside{
+    h2,p{
+      margin:$medida;
+    }
+  }
+}
+
+div.blue2{
+  margin:$medida*2 $automatico;
+
+  p{
+    @extend div.blue;
+    width:$percentage80;
+  }
+}

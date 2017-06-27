@@ -1,0 +1,18 @@
+$princ-color: rgb(235, 184, 93);
+$sec-color: rgb(62, 63, 64);
+$letter-color:rgb(255, 255, 255);
+
+@mixin divYellow($alt) {
+  background-color: $princ-color;
+  height: $alt;
+  color:$letter-color;
+  padding:$medida;
+}
+
+@mixin divBlue {
+  background-color: $sec-color;
+  width:100%;
+  color:$letter-color;
+  margin:$medida/2;
+  padding: $medida;
+}

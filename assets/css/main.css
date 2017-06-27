@@ -1,0 +1,116 @@
+@charset "UTF-8";
+.inline {
+  display: inline-block;
+  margin-right: 10px; }
+
+div.inline h1, div.inline p, div.inline h4, div.inline ol {
+  margin: 10px; }
+
+div.contenedor {
+  width: 80%;
+  margin: auto; }
+  @media (max-width: 480px) {
+    div.contenedor {
+      width: 100%;
+      font-size: 10px; }
+      div.contenedor h1 {
+        font-size: 18px; } }
+
+.contenedor1 {
+  width: 30%; }
+
+.contenedor2 {
+  width: 60%; }
+
+.contenedor1 {
+  position: relative;
+  top: -50px; }
+  @media (max-width: 480px) {
+    .contenedor1 {
+      position: static;
+      width: 100%; } }
+
+/*Grilla, no la use, utilice mi propia relaci├│n*/
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+h1 {
+  font-family: Arial;
+  font-size: 30px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.head {
+  background-color: #ebb85d;
+  height: 70px;
+  color: white;
+  padding: 10px; }
+
+ul li {
+  background-color: #3e3f40;
+  width: 100%;
+  color: white;
+  margin: 5px;
+  padding: 10px; }
+ul li:nth-child(4) {
+  background-color: #ebb85d;
+  height: auto;
+  color: white;
+  padding: 10px; }
+
+ol li {
+  margin-left: 20px; }
+
+div.blue, div.blue2 p {
+  background-color: #3e3f40;
+  width: 100%;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  margin: auto;
+  text-align: center; }
+  div.blue div.aside h2, div.blue2 p div.aside h2, div.blue div.aside p, div.blue2 p div.aside p {
+    margin: 10px; }
+
+div.blue2 {
+  margin: 20px auto; }
+  div.blue2 p {
+    width: 80%; }
+
+/*# sourceMappingURL=main.css.map */
